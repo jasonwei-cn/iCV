@@ -5,8 +5,10 @@ body, div, h2, h3, h4, h5, form, input, img, ul, ol, li, dl, dt, dd, p {
 	outline: 0;
 }
 .wrap h1{
-    font-size: 50px;
-    
+  font-size: 60px;
+  text-shadow: 1px 2px #22c3aa,2px 4px #aee2d9;
+  text-align: center;
+  color: #EEF3F0;
 }
 li {
 	list-style: none;
@@ -128,7 +130,7 @@ html, body {
     color: #575658;
 }
 .wrap .bg-black  #avatar{
-    width: 170px;
+ width: 170px;
 	height: 170px;
 	border: 8px solid transparent;
 	border-radius: 100px;
@@ -148,14 +150,19 @@ html, body {
 	position: relative;
 }
 
-.page2, .page4 {
-	background: #bbb;
+.page2 {
+	background: #00BFA5b;
 }
 
-.page3, .page5 {
-	background: #bbb;
+.page3 {
+	background: #9C58B6;
 }
-
+.page4{
+    background: #ED6461;
+}
+.page5{
+    background: #149B70;
+}
 .title {
 	font-size: 30px;
 }
@@ -194,6 +201,8 @@ html, body {
 
 .page2 {
 	text-align: center;
+    background:#00BFA5;
+
 }
 
 .page2 .tit2 {
@@ -209,10 +218,10 @@ html, body {
 	display: table;
 	height: 100px;
 	width: 450px;
-	background: #EFEFEF;
+	background: #35D8BF;
 	border: 1px solid #eee;
-	box-shadow: 1px 3px 3px 0 #b9b9b9;
-	border-radius: 2px;
+	box-shadow: 1px 3px 3px 0 #306364;
+	border-radius: 12px;
 	opacity: 0;
 	cursor: pointer;
 	box-sizing: border-box;
@@ -240,12 +249,13 @@ html, body {
 }
 
 .page2 .project .pro-txt > h3 {
-	font-size: 14px;
+	font-size: 17px;
 	margin-bottom: 5px;
 }
 
 .page2 .project .pro-txt > p {
-	font-size: 13px;
+	font-size: 14px;
+    font-weight:300;
 }
 
 .page2 .project .pro-btn {
@@ -312,13 +322,13 @@ html, body {
 .page3 .skill {
 	display: inline-block;
 	vertical-align: middle;
-	width: 150px;
-	height: 100%;
+	width: 160px;
+	height: 106%;
 	margin: 5px 20px;
-	background: #efefef;
+	background: #AEDBC6;
 	border: 1px solid #efefef;
 	box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.35);
-	border-radius: 2px;
+	border-radius: 10px;
 	position: relative;
 	-webkit-transition: -webkit-transform .8s ease;
 	transition: -webkit-transform .8s ease;
@@ -336,20 +346,22 @@ html, body {
 }
 
 .page3 .skill .skill-title {
-	font-size: 18px;
+	font-size: 20px;
 	width: 100px;
 	height: 40px;
 	margin: 10px auto;
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid #F13931;
 }
 
 .page3 .skill .skill-point {
-	font-size: 16px;
+ font-size: 16px;
 	display: inline-block;
 	margin: 5px 20px;
 	padding: 5px 10px;
 	background: rgba(255, 154, 0, 0.4);
 	border-radius: 8px;
+    color: #AEE2D9;
+    background-color: #096254;
 }
 
 .page3 .skill .backface {
@@ -358,6 +370,9 @@ html, body {
 	top: 0;
 	width: 100%;
 	height: 100%;
+	color: color: #AEE2D9;
+  background-color: #096254;
+	line-height: -20px;
 	padding: 15px;
 	text-indent: 2em;
 	text-align: justify;
@@ -369,6 +384,27 @@ html, body {
 	backface-visibility: hidden;
 	overflow: hidden;
 	background: #efefef;
+    border-radius: 8px;
+}
+
+.page4 .history.cur {
+	width: 500px;
+}
+
+.page4 .history .year {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50px;
+	height: 100%;
+	text-align: center;
+    margin: 0 auto;
+	box-sizing: border-box;
+	padding: 30px 0 0 15px;
+	font-size: 18px;
+	font-weight: 700;
+	word-wrap: break-word;
+	letter-spacing: 20px;
 }
 
 .page4 {
@@ -381,7 +417,7 @@ html, body {
 
 .page4 .content {
 	width: 650px;
-	height: 300px;
+	height: 330px;
 	margin: 100px auto 0;
 }
 
@@ -392,7 +428,7 @@ html, body {
 	margin: 0 2px;
 	background: #EFEFEF;
 	border: 1px solid #eee;
-	border-radius: 2px;
+	border-radius: 4px;
 	box-shadow: 1px 3px 3px 0 #b9b9b9;
 	overflow: hidden;
 	position: relative;
@@ -430,12 +466,17 @@ html, body {
 	line-height: 2;
 	text-align: left;
 	word-break: break-all;
-    
 }
-
+.page4 .history .intro dt{
+    font-size: 17px;
+}
+.page4 dd{
+    font-size: 15px;
+    font-weight: 400;
+}
 .page4 .history .intro .company {
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 22px;
 }
 
 .page4 .history .intro > .job {
@@ -447,14 +488,22 @@ html, body {
 	list-style-type: circle;
 }
 
+.page4 span{
+    color: #FEC02D;
+    background-color: #434343;
+    padding: 0 5px;
+    border-radius: 2px;
+
+}
 .page5 {
 	text-align: center;
 }
 .page5 .tit5{
-    margin-top: 60px;
-    }
+  margin-top: 60px;
+ }
+
 .page5 .content {
-	margin-top: 55px;
+	margin-top: 50px;
 }
 
 .page5 .content .end {
@@ -462,6 +511,7 @@ html, body {
 	font-size: 30px;
 	font-weight: 500;
 	margin: 10px 0;
+	color: #EEF3F0;
 }
 
 .page5 .content .end >a {
@@ -470,21 +520,18 @@ html, body {
 }
 
 .page5 .content .end >a:hover{
-        color: #009A61;
-}
-
-.page5 .content .end >a:hover{
-    color: #009A61;
+    color: #99FF33;
 }
 .page5 .content .end p{
     color: #434343;
 }
 .page5 .content .end p a{
-    color: #dddddd;
+    color: #99FF33;
 }
 .page5 .content .end p a:hover{
-    color: #009A61;
+    color: #dddddd;
 }
+
 @-webkit-keyframes fadeInRight {
 	0% {
 		opacity: 0;
@@ -789,6 +836,11 @@ html, body {
 	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }
+
+.info .info-box .info-li p{
+    color: antiquewhite;
+}
+
 .info .info-box .info-li a{
     color: antiquewhite;
 }
@@ -859,15 +911,15 @@ html, body {
 	position: fixed;
 	right: 3%;
 	top: 50%;
-	margin-top: -174px;
+	margin-top: -90px;
 }
 
 .nav-right .item {
-	height: 50px;
-	width: 50px;
+	height: 15px;
+	width: 15px;
 	margin: 10px 0;
-	background: #424242;
-	border-radius: 25px;
+	background: #EEF3F0;
+	border-radius:100px;
 	cursor: pointer;
 	font-size: 30px;
 	color: #fff;
@@ -884,7 +936,7 @@ html, body {
 	left: -50px;
 	top: 13px;
 	font-size: 16px;
-	color: #000;
+	color: #fff;
 }
 
 .nav-right .item.on {
@@ -976,7 +1028,7 @@ html, body {
 		margin-bottom: .1rem;
 	}
 
-	
+
 
 	.page2 .project .pro-txt {
 		width: 2.3rem;
@@ -1076,7 +1128,7 @@ html, body {
 	.page4 .history .intro .job {
 		margin-bottom: 0.05rem;
 	}
-    
+
 	.page5 .content {
 		margin: 1.8rem 0 0;
 	}
